@@ -5,7 +5,11 @@ use App\User;
 class MyController extends Controller{
 
         public function My($name){
-            return "My Name is ".$name;
+            return response($name)
+                    ->header('name',$name)
+                    ->header('age','28')
+                    ->header('city','Rajshahi')
+                    ->header('username','Rupom');
         }
 
 }
