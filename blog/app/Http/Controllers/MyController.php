@@ -4,10 +4,18 @@ use App\User;
 
 class MyController extends Controller{
 
-        public function My(){
-            $myArray=array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
-            return response()->json($myArray);
+        public function First(){
+           return redirect('/Second');
         }
         
-      
+        public function Second(){
+           
+            return "I am Second";
+        }
+
+        public function Download(){
+            $path='demo.txt';
+            return response()->download($path);
+        }
+
 }
