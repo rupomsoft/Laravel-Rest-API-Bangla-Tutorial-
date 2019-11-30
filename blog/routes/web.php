@@ -1,3 +1,3 @@
 <?php
 
-$router->get('/{name}','MyController@My');
+$router->get('/','MyController@My');
