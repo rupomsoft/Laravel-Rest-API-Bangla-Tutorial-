@@ -21,6 +21,8 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
+
+$app->configure('opendox');
 // $app->withFacades();
 
 // $app->withEloquent();
@@ -75,7 +77,7 @@ $app->singleton(
 | totally optional, so you are not required to uncomment this line.
 |
 */
-
+$app->register(Noitran\Opendox\ServiceProvider::class);
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
