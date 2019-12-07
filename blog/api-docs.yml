@@ -1,11 +1,11 @@
 openapi: "3.0.0"
 info:
   version: 1.0.0
-  title: Rabbil Hasan
+  title: Swagger Petstore
   license:
     name: MIT
 servers:
-  - url: http://localhost:8000/v1
+  - url: http://petstore.swagger.io/v1
 paths:
   /pets:
     get:

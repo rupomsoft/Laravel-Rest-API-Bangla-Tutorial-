@@ -1,17 +1,22 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "version": "1.0.0",
-        "title": "Rabbil Hasan",
+        "version": "1.1.1",
+        "title": "Demo API",
         "license": {
-            "name": "MIT"
+            "name": "MIT 2.0"
         }
     },
+	
+	
+	
     "servers": [
         {
-            "url": "http://localhost:8000/v1"
+            "url": "http://localhost:8000/"
         }
     ],
+	
+	
     "paths": {
         "/pets": {
             "get": {
@@ -65,6 +70,13 @@
             }
         }
     },
+	
+	
+	
+	
+	
+	
+	
     "components": {
         "schemas": {
             "Pet": {
