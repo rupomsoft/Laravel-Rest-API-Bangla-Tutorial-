@@ -8,7 +8,7 @@ class ExampleController extends Controller
     
 
     function testConn(){
-            $dbname=DB::Connection()->select("SELECT * FROM details");
+            $dbname=DB::select("SELECT * FROM details");
       return $dbname;
     }
 }
