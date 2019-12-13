@@ -18,4 +18,4 @@ $router->put('/details','DetailsController@DetailsUpdate');
 
 
 
-$router->get('/builder','BuilderController@AllRows');
+$router->get('/builder','BuilderController@Rows');
