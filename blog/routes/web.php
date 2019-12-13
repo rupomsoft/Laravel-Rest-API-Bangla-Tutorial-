@@ -15,3 +15,7 @@ $router->get('/details','DetailsController@DetailsSelect');
 $router->post('/details','DetailsController@DetailsCreate');
 $router->delete('/details','DetailsController@DetailsDelete');
 $router->put('/details','DetailsController@DetailsUpdate');
+
+
+
+$router->get('/builder','BuilderController@AllRows');
