@@ -28,14 +28,23 @@ class DetailsController extends Controller{
    
     }
 
-    function DetailsUpdate(){
-
-
+    function DetailsUpdate(Request $request){
+      $roll=  $request->input("roll");
+      $city=  $request->input("city");
+      $phn = $request->input("phn");
+      $SQL="UPDATE `details` SET `city`=?,`phn`=? WHERE `roll`=?";
+      $result=DB::update($SQL,[ $city,$phn,$roll]);
+      if($result==true){
+        return "Success";
+      }
+      else{
+        return "Fail";
+      }
+    
     }
 
 
     function DetailsCreate(Request $request){
-
       $name= $request->input("name");
       $roll=  $request->input("roll");
       $city=  $request->input("city");
