@@ -33,15 +33,35 @@ class BuilderController extends Controller{
 
   }
 
-  function Update(){
+  function Update(Request $request ){
+    $name=$request->input("name");
+    $id=$request->input("id");
+    $result =DB::table('details')->where('id', $id)->update(['name'=>$name]);
+    if($result ==true){
+      return "update Success";
 
-    
+    }
+    else{
+      return "update Fail";
+
+    }
+
   }
 
   
-  function Delete(){
+  function Delete(Request $request){
+    $id=$request->input("id");
+    $result =DB::table('details')->where('id', $id)->delete();
 
-    
+    if($result ==true){
+      return "delete Success";
+
+    }
+    else{
+      return "delete Fail";
+
+    }
+
   }
 
 
