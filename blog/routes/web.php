@@ -19,3 +19,9 @@ $router->put('/details','DetailsController@DetailsUpdate');
 
 
 $router->get('/builder','BuilderController@Rows');
+
+$router->post('/builder','BuilderController@Insert');
+
+$router->delete('/builder','BuilderController@Delete');
+
+$router->put('/builder','BuilderController@Update');
