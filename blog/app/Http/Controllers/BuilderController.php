@@ -53,12 +53,12 @@ class BuilderController extends Controller{
     $id=$request->input("id");
     $result =DB::table('details')->where('id', $id)->delete();
 
-    if($result ==true){
-      return "delete Success";
+   if($result ==true){
+      return "update Success";
 
     }
     else{
-      return "delete Fail";
+      return "update Fail";
 
     }
 
